@@ -72,3 +72,5 @@ $desPays = getCountriesByContinent($continent);
 require_once 'javascripts.php';
 require_once 'footer.php';
 ?>
+/** gufysdichb ghuxgfuyqdusvyyuds */
+
