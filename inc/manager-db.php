@@ -73,3 +73,26 @@ function getContinents()
     $query = 'SELECT  distinct Continent FROM Country;';
     return $pdo->query($query)->fetchAll();
 }
+
+
+/**
+ * il vérifie si'l éxiste une utilisateur ayant une login et un mot de pass
+ * @param $login
+ * @param $pass
+ * @return false si l'utilisateur n'existe pas, vrai sinon
+ */
+function getAuthentificatio($login,$pass){
+    global $pdo;
+    $query = "SELECT * FROM Utilisateur where login=:login and password=:pass";
+    $prep = $pdo->prepare($query);
+    $prep->bindValue(':login', $login);
+    $prep->bindValue(':pass', $pass);
+    $prep->execute();
+    // on vérifie que la requête ne retourne qu'une seule ligne
+    if($prep->rowCount() == 1){
+        return true;
+    }
+    else
+        return false;
+
+}
