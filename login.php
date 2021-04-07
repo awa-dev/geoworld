@@ -14,8 +14,12 @@
 ?>
 <?php  require_once 'header.php';
 ?>
-
-<main role="main" class="flex-shrink-0">
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
         <h1> Formulaire de connection </h1>
         <form action="session.php" method="post">
             <table>
@@ -28,15 +32,25 @@
                     <td> <input type="password" name="pwd"> </td>
                 </tr>
                 <tr>
+                <tr>
+                    <td>Rôle</td>
+                    <td> <input type="checkbox" name="Admin" value="admin" Admin></td>
+                    <td> <input type="checkbox" name="Utilisateur" value="utilisateur" Utilisateur></td>
+
+                </tr>
                     <td>Envoyer</td>
                     <td> <input type="submit" name="env"</td>
                 </tr>
             </table>
         </form>
-</main>
+    </body>
+
+</html>
 
 
 <?php
 require_once 'javascripts.php';
 require_once 'footer.php';
 ?>
+
+
