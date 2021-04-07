@@ -34,8 +34,8 @@
                 <tr>
                 <tr>
                     <td>Rôle</td>
-                    <td> <input type="checkbox" name="Admin" value="admin" Admin></td>
-                    <td> <input type="checkbox" name="Utilisateur" value="utilisateur" Utilisateur></td>
+                    <td> <input type="checkbox" name="Admin" value="admin"> Admin</td>
+                    <td> <input type="checkbox" name="Utilisateur" value="utilisateur" >Utilisateur</td>
 
                 </tr>
                     <td>Envoyer</td>
