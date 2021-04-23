@@ -18,6 +18,8 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
+        <title>Connection</title>
+        <link rel="stylesheet" type="text/css" href="css.css" >
     </head>
     <body>
         <h1> Formulaire de connection </h1>
@@ -27,20 +29,24 @@
                     <td>Identifiant:</td>
                     <td> <input type="text" name="login"> </td>
                 </tr>
+
                 <tr>
                     <td>Mot de passe:</td>
                     <td> <input type="password" name="pwd"> </td>
                 </tr>
-                <tr>
+
                 <tr>
                     <td>Rôle</td>
-                    <td> <input type="checkbox" name="Admin" value="admin"> Admin</td>
-                    <td> <input type="checkbox" name="Utilisateur" value="utilisateur" >Utilisateur</td>
+                    <td> <input type="radio" name="Choix" value="admin"> Admin</td>
+                    <td> <input type="radio" name="Choix" value="utilisateur" >Utilisateur</td>
 
                 </tr>
-                    <td>Envoyer</td>
-                    <td> <input type="submit" name="env"</td>
-                </tr>
+
+               <tr class="env">
+                   <td> <input type="submit" name="env"</td>
+               </tr>
+
+
             </table>
         </form>
     </body>

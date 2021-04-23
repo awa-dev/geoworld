@@ -1,0 +1,14 @@
+
+h1{
+    text-align: center;
+
+}
+
+table{
+    margin-left: -200px; /* - moitié de la largeur */
+    position: absolute;
+    left: 50%;
+    display: block;
+    margin-right: auto
+}
+
