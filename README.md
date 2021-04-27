@@ -7,12 +7,8 @@
 <img src="./geoworld/img/world-logo.png" alt="Logo du projet Geoworld"/>
 </div>
 <p align="center">
-    <a href="https://github.com/LittleBigWave/geoworld-school-project">
-        <img alt="GitHub license" src="https://img.shields.io/github/license/LittleBigWave/geoworld-school-project?style=for-the-badge">
-    </a>
-    <a href="https://github.com/LittleBigWave/geoworld-school-project/issues">
-        <img alt="GitHub issues" src="https://img.shields.io/github/issues/LittleBigWave/geoworld-school-project?style=for-the-badge">
-    </a>
+    <a href="https://github.com/awa-dev/geoworld"><img alt="GitHub license" src="https://img.shields.io/github/license/awa-dev/geoworld?style=flat-square"></a>
+    <a href="https://github.com/awa-dev/geoworld/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/awa-dev/geoworld?style=flat-square"></a>
 </p>
 
 
