@@ -10,7 +10,7 @@ services:
       - MYSQL_PASSWORD=336655
       - MYSQL_DATABASE=geoworlddb
     volumes:
-      - ./res/db.sql:/docker-entrypoint-initdb.d/db.sql
+      - ./geoworld/res/db.sql:/docker-entrypoint-initdb.d/db.sql
       - ./data/db:/var/lib/mysql
     ports:
       - '3306:3306'
