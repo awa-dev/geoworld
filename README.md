@@ -4,7 +4,7 @@
 
 <h1 align="center">Bienvenue sur Geoworld 👋</h1>
 <div style="text-align:center">
-<img src="./geoworld/images/world-logo.png" alt="Logo du projet Geoworld"/>
+<img src="./geoworld/img/world-logo.png" alt="Logo du projet Geoworld"/>
 </div>
 <p align="center">
     <a href="https://github.com/LittleBigWave/geoworld-school-project">
