@@ -1,0 +1,44 @@
+version: "3"
+services:
+  database:
+    image: mysql
+    container_name: db_geoworld
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=336655
+      - MYSQL_USER=geoworld
+      - MYSQL_PASSWORD=336655
+      - MYSQL_DATABASE=geoworlddb
+    volumes:
+      - ./res/db.sql:/docker-entrypoint-initdb.d/db.sql
+      - ./data/db:/var/lib/mysql
+    ports:
+      - '3306:3306'
+  website:
+    build:
+      context: ./build/
+      dockerfile: Dockerfile
+    container_name: php_geoworld
+    restart: unless-stopped
+    volumes:
+      - ./geoworld/:/var/www/html
+    ports:
+      - '80:80'
+    
+
+# IP FIX
+
+#     networks:
+#       app_net:
+#         ipv4_address: 172.22.0.2
+
+# networks:
+#   app_net:
+#     driver: bridge
+#     driver_opts:
+#       com.docker.network.enable_ipv6: "false"
+#     ipam:
+#       driver: default
+#       config:
+#         - subnet: 172.22.0.0/24
+#           gateway: 172.22.0.1
