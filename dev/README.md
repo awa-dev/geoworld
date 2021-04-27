@@ -1,0 +1,31 @@
+<!-- markdownlint-disable MD032 MD033-->
+<!-- markdownlint-disable MD041 MD047 -->
+<!-- markdownlint-disable MD026 MD012-->
+
+<h1 align="center">Bienvenue sur Geoworld 👋</h1>
+<div style="text-align:center">
+<img src="./geoworld/images/world-logo.png" alt="Logo du projet Geoworld"/>
+</div>
+<p align="center">
+    <a href="https://github.com/LittleBigWave/geoworld-school-project">
+        <img alt="GitHub license" src="https://img.shields.io/github/license/LittleBigWave/geoworld-school-project?style=for-the-badge">
+    </a>
+    <a href="https://github.com/LittleBigWave/geoworld-school-project/issues">
+        <img alt="GitHub issues" src="https://img.shields.io/github/issues/LittleBigWave/geoworld-school-project?style=for-the-badge">
+    </a>
+</p>
+
+
+---
+
+## Geoworld, c'est quoi ?
+
+>Geoworld est un site internet sur lequel il est possible de consulter des informations concernant les différents pays à travers le monde.
+
+---
+
+## Auteur(s) :
+
+[@LittleBigWave](https://github.com/LittleBigWave)
+[@awa-dev](https://github.com/awa-dev)
+[@bulle-creator](https://github.com/bulle-creator)
