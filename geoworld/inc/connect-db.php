@@ -8,13 +8,13 @@
  * @package   Application
  * @license   http://opensource.org/licenses/gpl-license.php GNU Public License
  */
-
-
+?>
+<?php
 ini_set('display_errors', 1);
-define('DB_NAME', '<DATABASE_NAME>');
-define('DB_DSN', 'mysql:host=<IP>;dbname=' . DB_NAME . ';charset=utf8');
-define('DB_USER', '<DATABASE_USER>');
-define('DB_PASSWORD', '<MDP>');
+define('DB_NAME', 'geoworlddb');
+define('DB_DSN', 'mysql:host=172.23.0.2;dbname=' . DB_NAME . ';charset=utf8');
+define('DB_USER', 'geoworld');
+define('DB_PASSWORD', '336655');
 define('DEBUG', true);
 
 /**
@@ -57,7 +57,6 @@ $pdo =  $_connect[0];
 $_connect = null;
 
 if ($_dbError) {
-    // arrêt de l'application
     die(
         '<div class="ui red inverted segment"> <p>'
           . $_dbError
