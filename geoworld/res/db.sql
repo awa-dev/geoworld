@@ -56,6 +56,19 @@ CREATE TABLE `CountryLanguage` (
   CONSTRAINT `fk_constraint_Language` FOREIGN KEY (`idLanguage`) REFERENCES `Language` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+DROP TABLE IF EXISTS `Utilisateurs`;
+
+CREATE TABLE `Utilisateurs` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`login` char(15) NOT NULL,
+	`password` char(20) NOT NULL,
+  `role` enum('eleve', 'prof', 'admin') NOT NULL DEFAULT 'eleve',
+	PRIMARY KEY (`id`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+DELETE FROM Utilisateurs;
+INSERT INTO `Utilisateurs` (`id`, `login`, `password`, `role`)
+VALUES (1, 'admin', 'changeme', 'admin');
 
 
 DELETE FROM City;
